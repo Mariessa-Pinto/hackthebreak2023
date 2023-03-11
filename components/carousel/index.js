@@ -1,9 +1,9 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import styles from "/carousel/carousel.module.css"
+import styles from "./carousel.module.css"
 import Card from "../card"
-import { position } from '../data/positions.js'
+import { position } from '../../data/positions.js'
 
 
 export default function Carousel() {
