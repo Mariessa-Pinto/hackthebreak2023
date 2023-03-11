@@ -1,6 +1,12 @@
 :root {
- --black: #000;
-}
+ --black: #0B0C20;
+ --blue: #22527E;
+ --light-blue: #A9C8DA;
+ --gray: #EBF4F5;
+ --orange: #EC8B58;
+ --off-white: #EbF4F5;
+ --semi-transparent: rgba(235, 244, 245, 0.5)
+;}
 
 * {
   box-sizing: border-box;
