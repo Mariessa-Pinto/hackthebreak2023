@@ -1,11 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Carousel from '@/carousel'
+import HeaderTitle from '@/headerTitle'
+import { headers } from '../data/headers.js'
+import { useState } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
+
+  const [data, setData] = useState([...headers.heading]);
+
+
   return (
     <>
       <Head>
@@ -15,6 +22,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
+
+        <Carousel />
+
+
 
       </main>
     </>

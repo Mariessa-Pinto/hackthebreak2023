@@ -1,0 +1,26 @@
+.hero {
+    width: 100%;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6rem;
+    background-image: linear-gradient(to right, rgba(250, 179, 141, 1) , rgba(225, 114, 55, 1));
+}
+
+.heroText {
+    width: 23%;
+    padding: 2em 0px;
+
+}
+
+.heroCTA {}
+
+.heroButton {
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    height: 3em;
+    padding: 0px 2em;
+    border-radius: 10px;
+}

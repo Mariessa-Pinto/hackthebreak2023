@@ -1,0 +1,25 @@
+.main {
+display: flex;
+align-items: center;
+width: 100%;
+box-sizing: border-box;
+
+}
+
+.line1 {
+    width: 10em;
+
+}
+
+.line2 {
+width: 100%;
+float: right;
+
+
+}
+
+.test{
+width: auto;
+flex-shrink: 0;
+padding: 0px 1.5em;
+}

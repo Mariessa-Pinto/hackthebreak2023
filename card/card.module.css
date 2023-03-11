@@ -1,0 +1,63 @@
+.main{
+    width: 18em;
+    height: 10em;
+    transform: skew(-20deg);
+    background: var(--white);
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+.firstRow{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 0.5em;
+}
+.secondRow{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.contract{
+    width: auto;
+    height: 2em;
+    background-color: #EBF4F5;
+    border-radius: 10px;
+    padding: 0.5em;
+    
+}
+
+.remote{
+    width: auto;
+    height: 2em;
+    background-color: #EC8B58;
+    border-radius: 10px;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.fulltime{
+    width: auto;
+    height: 2em;
+    background-color: #22527E;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5em;
+}
+
+.position{
+    width: auto;
+    height: 2em;
+    background-color: #8E9FAF;
+    border-radius: 10px;
+    padding: 0.5em;
+}
