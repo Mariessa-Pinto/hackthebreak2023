@@ -1,0 +1,27 @@
+.main{
+background: pink;
+position: relative;
+}
+
+.body{
+
+}
+
+.imageL{
+    position: absolute;
+    left: 1em;
+    top: 4em;
+
+}
+
+.imageR{
+    position: absolute;
+    right: 1em;
+    top: 4em;
+
+}
+
+.positions{
+    display: flex;
+    gap: 2em
+}

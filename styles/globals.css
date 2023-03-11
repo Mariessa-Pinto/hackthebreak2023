@@ -5,8 +5,9 @@
  --gray: #EBF4F5;
  --orange: #EC8B58;
  --off-white: #EbF4F5;
- --semi-transparent: rgba(235, 244, 245, 0.5)
-;}
+  --white: #fff;
+ --semi-transparent: rgba(235, 244, 245, 0.5);
+ }
 
 * {
   box-sizing: border-box;

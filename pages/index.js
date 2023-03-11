@@ -1,9 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
+import Carousel from '@/carousel'
+import HeaderTitle from '@/headerTitle'
+import { headers } from '../data/headers.js'
+import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 
 export default function Home() {
+
+  const [data, setData] = useState([...headers.heading]);
+
+
   return (
     <>
       <Head>
@@ -14,6 +22,8 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navbar/>
+
+        <Carousel />
       </main>
     </>
   )
