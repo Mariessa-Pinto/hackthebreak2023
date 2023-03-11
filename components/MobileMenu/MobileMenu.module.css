@@ -1,0 +1,12 @@
+.openMenu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fullMenu {
+    position: absolute;
+    top: 6rem;
+    right: 2.5rem;
+}
