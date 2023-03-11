@@ -8,9 +8,9 @@ export default function Navbar() {
         <div className={styles.navbar}>
             <Image
                 className={styles.logo}
-                src={''}
+                src={'/logo/logo.svg'}
                 alt={'logo'}
-                width={50}
+                width={200}
                 height={50}
             />
             <div className={styles.links}>
