@@ -1,5 +1,5 @@
 import styles from '@/styles/Skills.module.css'
-import HeaderTitle from '@/headerTitle'
+import HeaderTitle from '@/components/headerTitle'
 import { headers } from '../data/headers.js'
 import { useState } from 'react';
 

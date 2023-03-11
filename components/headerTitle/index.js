@@ -1,4 +1,4 @@
-import styles from "headerTitle/headertitle.module.css"
+import styles from "./headertitle.module.css"
 
 export default function HeaderTitle({
 
