@@ -23,7 +23,7 @@ export const position = {
             area: "C++ Fundamentals"
         },
         {
-            image: "/imgs/4.png",
+            image: "/imgs/5.png",
             area: "Javascript Fundamentals"
         }
     ],

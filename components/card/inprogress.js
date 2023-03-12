@@ -10,7 +10,7 @@ export default function ProgressCard({
         <>
             <div className={styles.main}>
                 <div className={styles.img} style={{borderRadius: '25px', overflow: "hidden"}}>
-                    <Image src={image} layout='fill' objectFit='cover'/>
+                    <Image src={image} layout='fill' objectFit='cover' className={styles.img} />
                 </div>
                 <div className={styles.area}>
                     {area}

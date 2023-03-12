@@ -3,6 +3,8 @@
     padding-bottom: 5em;
 }
 
+
+
 .hero {
     width: 100%;
     height: auto;
@@ -12,6 +14,8 @@
     padding: 2rem 0rem;
     background-image: linear-gradient(to right, rgba(250, 179, 141, 1), rgba(225, 114, 55, 1));
 }
+
+.LCol {}
 
 
 .heroLCol {
@@ -36,19 +40,50 @@
 .topRow {
     display: flex;
     flex-direction: row;
+
 }
 
-.skillsHeading {}
+
 
 .UXBadge {
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    padding-left: 4.5em;
+    gap: 1em;
+    padding-left: 8em;
 }
 
 .badge {
     display: flex;
     gap: 2em;
     align-items: center;
+}
+
+@media only screen and (max-width: 430px) {
+    .hero {
+
+        flex-direction: column;
+
+    }
+
+    .heroLCol {
+        width: 100%;
+        padding: 2em 2em;
+    }
+
+    .topRow {
+        flex-direction: column;
+    }
+
+    .LCol {
+        height: 30em;
+    }
+
+    .helpMe2 {
+        height: 35em;
+    }
+
+    .UXBadge {
+        padding-left: 4em;
+    }
+
 }
