@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import Carousel from '@/components/carousel'
-import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer/index.js'
 
@@ -55,9 +53,100 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className={styles.carousel}>
+          <div className={styles.seperator}>
+            <div className={styles.smallLine}></div>
+            <h2>Recommended for You</h2>
+            <div className={styles.bigLine}></div>
+          </div>
+          <div className={styles.recommendations}>
+            <Image
+                src={'/icons/leftArrow.png'}
+                alt={'left Arrow'}
+                width={20}
+                height={30}
+                className={styles.arrow}
+            />
+          <div className={styles.parallelogramOne}>
+            <div className={styles.tags}>
+            <Image
+                 src={'/icons/bookmark.svg'}
+                 alt={'bookmark'}
+                 width={40}
+                 height={40}
+                 className={styles.bookmark}
+            />
+            <div className={styles.topRow}>
+              <div><p className={styles.tagOne}>Permanent</p></div>
+              <div><p className={styles.tagTwo}>Remote friendly</p></div>
+            </div>
+            <div className={styles.bottomRow}>
+              <div><p className={styles.tagThree}>Full-time</p></div>
+              <div><p className={styles.tagFour}>Senior position</p></div>
+            </div>
+            </div>
+            <p className={styles.tagFive}>Spotify | Senior UX UI Designer</p>
+          </div>
+          <div className={styles.parallelogramTwo}>
+            <div className={styles.tags}>
+            <Image
+                 src={'/icons/bookmark.svg'}
+                 alt={'bookmark'}
+                 width={40}
+                 height={40}
+                 className={styles.bookmark}
+            />
+            <div className={styles.topRow}>
+              <div><p className={styles.tagOne}>Contract</p></div>
+              <div><p className={styles.tagTwo}>Remote friendly</p></div>
+            </div>
+            <div className={styles.bottomRow}>
+              <div><p className={styles.tagThree}>Part-time</p></div>
+              <div><p className={styles.tagFour}>Junior position</p></div>
+            </div>
+            </div>
+            <p className={styles.tagFive}>Google | Junior Profuct Designer</p>
+          </div>
+          <div className={styles.parallelogramThree}>
+            <div className={styles.tags}>
+            <Image
+                 src={'/icons/bookmark.svg'}
+                 alt={'bookmark'}
+                 width={40}
+                 height={40}
+                 className={styles.bookmark}
+            />
+            <div className={styles.topRow}>
+              <div><p className={styles.tagOne}>Permanent</p></div>
+              <div><p className={styles.tagTwo}>Remote friendly</p></div>
+            </div>
+            <div className={styles.bottomRow}>
+              <div><p className={styles.tagThree}>Full-time</p></div>
+              <div><p className={styles.tagFour}>Senior position</p></div>
+            </div>
+            </div>
+            <p className={styles.tagFive}>Spotify | Senior UX UI Designer</p>
+          </div>
+          <Image
+                src={'/icons/rightArrow.png'}
+                alt={'right Arrow'}
+                width={20}
+                height={30}
+                className={styles.arrow}
+            />
+        </div>
+        </div>
+        <div className={styles.postings}>
+        <div className={styles.seperator}>
+            <div className={styles.smallLineTwo}></div>
+            <h2>Recent Job Postings</h2>
+            <div className={styles.bigLineTwo}></div>
+          </div> 
+          <div className={styles.cards}>
 
+          </div>
+        </div>
 
-        {/* <Carousel/> */}
         <Footer/>
       </main>
     </>
