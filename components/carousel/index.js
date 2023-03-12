@@ -41,6 +41,13 @@ export default function Carousel() {
                     height: 150
 
                 }}>
+                    <Image className={styles.imageL}
+                        src={"/icons/leftArrow.png"}
+                        alt={"/icons/leftArrow.png"}
+                        width={25}
+                        height={25}
+                        onClick={() => changeImage("backward")}
+                    />
                     <div className={styles.positions}>
                         {data && data.map((info, index) => {
                             {
@@ -60,14 +67,6 @@ export default function Carousel() {
                             }
                         })}
                     </div>
-                    <Image className={styles.imageL}
-                        src={"/icons/leftArrow.png"}
-                        alt={"/icons/leftArrow.png"}
-                        width={25}
-                        height={25}
-                        onClick={() => changeImage("backward")}
-                    />
-
                     <Image className={styles.imageR}
                         src={"/icons/rightArrow.png"}
                         alt={"/icons/rightArrow.png"}

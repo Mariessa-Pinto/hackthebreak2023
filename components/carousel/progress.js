@@ -33,6 +33,13 @@ export default function ProgressCarousel() {
     return (
         <>
             <div className={styles.main}>
+            <Image className={styles.imageL}
+                        src={"/icons/leftArrow.png"}
+                        alt={"/icons/leftArrow.png"}
+                        width={25}
+                        height={25}
+                        onClick={() => changeImage("backward")}
+                    />
                 <div className={styles.body} style={{
                     backgroundImage: "url(/carousel-images/" + img + ".jpg)", //concatonation, it's inserting the useState image number, which matches with the image names.
                     backgroundSize: 'cover',
@@ -41,6 +48,7 @@ export default function ProgressCarousel() {
                     height: 150
 
                 }}>
+
                     <div className={styles.positions}>
                         {data && data.map((info, index) => {
                             {
@@ -56,23 +64,17 @@ export default function ProgressCarousel() {
                             }
                         })}
                     </div>
-                    <Image className={styles.imageL}
-                        src={"/icons/leftArrow.png"}
-                        alt={"/icons/leftArrow.png"}
-                        width={25}
-                        height={25}
-                        onClick={() => changeImage("backward")}
-                    />
 
-                    <Image className={styles.imageR}
+
+
+                </div>
+                <Image className={styles.imageR}
                         src={"/icons/rightArrow.png"}
                         alt={"/icons/rightArrow.png"}
                         width={25}
                         height={25}
                         onClick={() => changeImage("forward")}
                     />
-
-                </div>
             </div>
 
         </>

@@ -8,6 +8,7 @@ import Carousel from '@/components/carousel/index.js';
 import ProgressCarousel from '@/components/carousel/progress.js';
 import Image from "next/image";
 import RecommendedCarousel from '@/components/carousel/recommended.js';
+import Footer from '@/components/Footer/index.js';
 
 export default function Skills() {
 
@@ -36,85 +37,94 @@ export default function Skills() {
 
         </div>
 
+        <div className={styles.body}>
+          <div className={styles.topRow}>
 
-        <div className={styles.topRow}>
+            <div className={styles.LCol}>
+              <div className={styles.helpMe}>
+                {data && data.map((info, index) => {
+                  if ("yes" == "yes") {
+                    return (
+                      <div>
+                        <HeaderTitle
+                          key={index}
+                          recommend={info.progress}
 
-          <div className={styles.LCol}>
-            {data && data.map((info, index) => {
-              if ("yes" == "yes") {
-                return (
-                  <div className={styles.skillsHeading}>
-                    <HeaderTitle
-                      key={index}
-                      recommend={info.progress}
+                        />
 
-                    />
+                      </div>
 
-                  </div>
-
-                )
-              }
-            })}
-            <ProgressCarousel />
-          </div>
-
-          <div className={styles.RCol}>
-            {data && data.map((info, index) => {
-              if ("yes" == "yes") {
-                return (
-                  <div className={styles.skillsHeading}>
-                    <HeaderTitle
-                      key={index}
-                      recommend={info.badge}
-
-                    />
-
-                  </div>
-
-                )
-              }
-            })}
-
-            <div className={styles.UXBadge}>
-              <div className={styles.badge}>
-                <Image src="/icons/Asset 8.svg" width={50} height={50} />
-                <div className={styles.UXText}>
-                  <b>UX/UI Design Fundamentals</b>
-                  <p>Earned on March 9, 2023</p>
-                </div>
+                    )
+                  }
+                })}
               </div>
-              <div className={styles.badge}>
-                <Image src="/icons/Asset 6.svg" width={50} height={50} />
-                <div className={styles.UXText}>
-                  <b>Vanilla JavaScript Novice</b>
-                  <p>Earned on March 1, 2023</p>
+              <ProgressCarousel />
+            </div>
+
+            <div className={styles.RCol}>
+              <div className={styles.helpMe1}>
+                {data && data.map((info, index) => {
+                  if ("yes" == "yes") {
+                    return (
+                      <div className={styles.skillsHeading}>
+                        <HeaderTitle
+                          key={index}
+                          recommend={info.badge}
+
+                        />
+
+                      </div>
+
+                    )
+                  }
+                })}
+              </div>
+
+              <div className={styles.UXBadge}>
+                <div className={styles.badge}>
+                  <Image src="/icons/Asset 8.svg" width={50} height={50} />
+                  <div className={styles.UXText}>
+                    <b>UX/UI Design Fundamentals</b>
+                    <p>Earned on March 9, 2023</p>
+                  </div>
+                </div>
+                <div className={styles.badge}>
+                  <Image src="/icons/Asset 6.svg" width={50} height={50} />
+                  <div className={styles.UXText}>
+                    <b>Vanilla JavaScript Novice</b>
+                    <p>Earned on March 1, 2023</p>
+                  </div>
                 </div>
               </div>
             </div>
+
+          </div>
+
+
+          <div className={styles.helpMe2}>
+            {data && data.map((info, index) => {
+              if ("yes" == "yes") {
+                return (
+                  <div>
+                    <HeaderTitle
+                      key={index}
+                      recommend={info.recommended}
+
+                    />
+                  </div>
+
+                )
+              }
+            })}
+            <RecommendedCarousel />
           </div>
 
         </div>
 
-
-
-        {data && data.map((info, index) => {
-          if ("yes" == "yes") {
-            return (
-              <div>
-                <HeaderTitle
-                  key={index}
-                  recommend={info.recommended}
-
-                />
-              </div>
-
-            )
-          }
-        })}
-        <RecommendedCarousel />
-
-
       </main>
+      <footer>
+        <Footer />
+      </footer>
 
 
     </>
