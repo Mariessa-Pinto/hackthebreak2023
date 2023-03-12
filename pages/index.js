@@ -142,7 +142,78 @@ export default function Home() {
             <h2>Recent Job Postings</h2>
             <div className={styles.bigLineTwo}></div>
           </div> 
-          <div className={styles.cards}>
+          <div className={styles.allCards}>
+          <div className={styles.cardsOne}>
+            <div className={styles.topCard}>
+              <p className={styles.title}>Shopify</p>
+              <p className={styles.subtitle}>Senior UX UI Designer</p>
+            </div>
+            <div className={styles.bottomCard}>
+              <p className={styles.subtitle}>Skills Required</p>
+              <div className={styles.cardTopRow}>
+                <div className={styles.tagg}>Figma</div>
+                <div className={styles.taggTwo}>Adobe InDesign</div>
+              </div>
+                <div className={styles.taggThree}>Illustrator</div>
+            </div>
+          </div>
+          <div className={styles.cardsTwo}>
+            <div className={styles.topCardTwo}>
+              <p className={styles.title}>Apple</p>
+              <p className={styles.subtitle}>Senior Full-stack Developer</p>
+            </div>
+            <div className={styles.bottomCard}>
+              <p className={styles.subtitle}>Skills Required</p>
+              <div className={styles.cardTopRow}>
+                <div className={styles.tagg}>HTML</div>
+                <div className={styles.taggTwo}>Javascript</div>
+                <div className={styles.taggTwo}>CSS</div>
+              </div>
+              <div className={styles.cardTopRow}>
+                <div className={styles.taggTwo}>Python</div>
+                <div className={styles.taggTwo}>Ruby</div>
+                <div className={styles.taggTwo}>Java</div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.cardsTwo}>
+            <div className={styles.topCard}>
+              <p className={styles.title}>Unity</p>
+              <p className={styles.subtitle}>Software Developer</p>
+            </div>
+            <div className={styles.bottomCard}>
+              <p className={styles.subtitle}>Skills Required</p>
+              <div className={styles.cardTopRow}>
+                <div className={styles.tagg}>HTML</div>
+                <div className={styles.taggTwo}>Javascript</div>
+                <div className={styles.taggTwo}>CSS</div>
+              </div>
+              <div className={styles.cardTopRow}>
+                 <div className={styles.taggTwo}>Python</div>
+                <div className={styles.taggTwo}>Ruby</div>
+                <div className={styles.taggTwo}>Java</div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.cardsTwo}>
+            <div className={styles.topCard}>
+              <p className={styles.title}>Disney</p>
+              <p className={styles.subtitle}>Animator</p>
+            </div>
+            <div className={styles.bottomCard}>
+              <p className={styles.subtitle}>Skills Required</p>
+              <div className={styles.cardTopRow}>
+                <div className={styles.tagg}>Blender</div>
+                <div className={styles.taggTwo}>After Effects</div>
+              </div>
+              <div className={styles.cardTopRow}>
+                <div className={styles.taggTwo}>Photoshop</div>
+                <div className={styles.taggTwo}>Maya</div>
+              </div>
+            </div>
+          </div>
+
+
 
           </div>
         </div>

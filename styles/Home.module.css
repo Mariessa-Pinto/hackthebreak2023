@@ -16,7 +16,7 @@
 
 .leftCol {
   width: 50%;
-  padding: 0 2rem;
+  padding: 0 6rem;
 }
 
 .welcome {
@@ -285,6 +285,84 @@
   cursor: pointer;
 }
 
+.cardsOne {
+  width: 295px;
+  height: 350px;
+  background: linear-gradient(to top, #FFE3D6, #EBF4F5);
+  padding: 2rem;
+  margin-bottom: 6rem;
+  border-radius: 20px;
+}
+
+.cardsTwo {
+  width: 295px;
+  height: 350px;
+  background: linear-gradient(to top, #FFE3D6, #EBF4F5);
+  padding: 2rem;
+  margin-bottom: 6rem;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.tagg {
+  height: 30px;
+  width: 5rem;
+  padding: 0.15rem;
+  background-color: var(--light-peach);
+  border: 1.5px solid var(--orange);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.taggTwo {
+  height: 30px;
+  width: 10rem;
+  padding: 0.15rem;
+  background-color: var(--light-peach);
+  border: 1.5px solid var(--orange);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.taggThree {
+  height: 30px;
+  width: 6rem;
+  padding: 0.15rem;
+  background-color: var(--light-peach);
+  border: 1.5px solid var(--orange);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cardTopRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.topCard {
+  margin-bottom: 6rem;
+}
+
+.topCardTwo {
+  margin-bottom: 4.5rem;
+}
+
+.allCards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 /* Mobile */
 @media only screen and (max-width: 430px) {
   .intro {
@@ -324,6 +402,12 @@
   }
   .arrow {
     display: none;
+  }
+  .cardsTwo {
+    display: none;
+  }
+  .cardsOne {
+    margin-left: 1rem;
   }
 
 }

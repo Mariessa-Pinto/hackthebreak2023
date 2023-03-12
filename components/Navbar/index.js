@@ -22,7 +22,7 @@ export default function Navbar() {
             </div>
             <div className={styles.buttonAndProfile}>
             <button className={styles.button}>Login</button>
-                <Link href={'@/pages/profile.js'}>
+                <Link href={'/profile'}>
                     <Image
                         src={'/imgs/profileIcon.png'}
                         alt={'profile icon'} 
