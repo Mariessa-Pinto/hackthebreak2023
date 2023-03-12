@@ -5,9 +5,409 @@
   align-items: center;
   min-height: 100vh;
   padding: 0;
+  background: linear-gradient(to top left, #A9C8DA, #EBF4F5, #EBF4F5);
+}
+
+.intro {
+  padding: 6rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftCol {
+  width: 50%;
+  padding: 0 6rem;
+}
+
+.welcome {
+  color: var(--blue-grey);
+  font-size: 35px;
+}
+
+.jimmy {
+  font-size: 50px;
+}
+
+.para {
+  padding: 2rem 0;
+}
+
+.smallHeader {
+  font-size: 20px;
+  padding: 0.5rem 0;
+}
+
+.paraTwo {
+  padding: 0 0 1rem 0;
+}
+
+.quizButton {
+  color: var(--light-peach);
+  background-color: var(--dark-blue);
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  margin-left: 11rem;
+  cursor: pointer;
+}
+
+.quizButton:hover {
+  scale: 1.03;
+  transition: 300ms;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.entryBox {
+  width: 210px;
+  height: 95px;
+  background-color: var(--orange);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+.entry {
+  font-size: 18px;
+}
+
+.jobs {
+  font-size: 24px;
+}
+
+.topRight {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.remoteBox {
+  width: 235px;
+  height: 183px;
+  background-color: var(--orange);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+.bottomRight {
+  width: 295px;
+  height: 135px;
+  background-color: var(--orange);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  margin-left: 10.5rem;
+}
+
+.seperator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.smallLine {
+  height: 0.05rem;
+  width: 10vw;
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+.bigLine {
+  height: 0.05rem;
+  width: 50vw;
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+.parallelogramOne {
+  height: 210px;
+  width: 340px;
+  background-color: var(--white);
+  transform:skew(-20deg);
+  border-radius: 39px;
+  cursor: pointer;
+}
+
+.parallelogramOne:hover {
+  scale: 1.03;
+  transition: 300ms;
+}
+
+.parallelogramTwo {
+  height: 210px;
+  width: 340px;
+  background-color: var(--white);
+  transform:skew(-20deg);
+  border-radius: 39px;
+  cursor: pointer;
+}
+
+.parallelogramTwo:hover {
+  scale: 1.03;
+  transition: 300ms;
+}
+
+.parallelogramThree {
+  height: 210px;
+  width: 340px;
+  background-color: var(--white);
+  transform:skew(-20deg);
+  border-radius: 39px;
+  cursor: pointer;
+}
+
+.parallelogramThree:hover {
+  scale: 1.03;
+  transition: 300ms;
+}
+
+.bookmark {
+  transform:skew(20deg);
+  margin: 1rem 2rem;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+
+.tagOne {
+  transform:skew(20deg);
+  height: 26px;
+  width: 104px;
+  background-color: var(--off-white);
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.15rem;
+  font-size: 14px;
+}
+
+.tagTwo {
+  transform:skew(20deg);
+  height: 26px;
+  width: 118px;
+  background-color: var(--orange);
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.15rem;
+  font-size: 14px;
+}
+
+.tagThree {
+  transform:skew(20deg);
+  height: 26px;
+  width: 104px;
+  background-color: var(--blue);
+  color: var(--off-white);
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.15rem;
+  font-size: 14px;
+}
+
+.tagFour {
+  transform:skew(20deg);
+  height: 26px;
+  width: 104px;
+  background-color: var(--light-blue);
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.15rem;
+  font-size: 14px;
+}
+
+.tagFive {
+  transform:skew(20deg);
+  font-size: 20px;
+  padding-left: 2rem;
+}
+
+.smallLineTwo {
+  height: 0.05rem;
+  width: 10vw;
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+.bigLineTwo {
+  height: 0.05rem;
+  width: 52.5vw;
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+.recommendations {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.arrow {
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.cardsOne {
+  width: 295px;
+  height: 350px;
+  background: linear-gradient(to top, #FFE3D6, #EBF4F5);
+  padding: 2rem;
+  margin-bottom: 6rem;
+  border-radius: 20px;
+}
+
+.cardsTwo {
+  width: 295px;
+  height: 350px;
+  background: linear-gradient(to top, #FFE3D6, #EBF4F5);
+  padding: 2rem;
+  margin-bottom: 6rem;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.tagg {
+  height: 30px;
+  width: 5rem;
+  padding: 0.15rem;
+  background-color: var(--light-peach);
+  border: 1.5px solid var(--orange);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.taggTwo {
+  height: 30px;
+  width: 10rem;
+  padding: 0.15rem;
+  background-color: var(--light-peach);
+  border: 1.5px solid var(--orange);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.taggThree {
+  height: 30px;
+  width: 6rem;
+  padding: 0.15rem;
+  background-color: var(--light-peach);
+  border: 1.5px solid var(--orange);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cardTopRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.topCard {
+  margin-bottom: 6rem;
+}
+
+.topCardTwo {
+  margin-bottom: 4.5rem;
+}
+
+.allCards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 /* Mobile */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
+  .intro {
+    padding: 3rem;
+  }
+  .rightCol {
+    display: none;
+  }
+  .leftCol {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .quizButton {
+    margin-left: 24%;
+    padding: 1rem 1.25rem;
+  }
+  .paraTwo {
+    padding: 0 0 2rem 0;
+  }
+  .smallLine {
+    display: none;
+  }
+  .smallLineTwo {
+    display: none;
+  }
+  .bigLine {
+    width: 18vw;
+  }
+  .bigLineTwo {
+    width: 22vw;
+  }
+  .parallelogramTwo {
+    display: none;
+  }
+  .parallelogramThree {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .cardsTwo {
+    display: none;
+  }
+  .cardsOne {
+    margin-left: 1rem;
+  }
 
 }

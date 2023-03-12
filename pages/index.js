@@ -1,17 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import Carousel from '@/components/carousel'
-import HeaderTitle from '@/components/headerTitle'
-import { headers } from '../data/headers.js'
-import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer/index.js'
 
 export default function Home() {
-
-  const [data, setData] = useState([...headers.heading]);
-
 
   return (
     <>
@@ -23,8 +16,208 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navbar/>
+        <div className={styles.intro}>
+          <div className={styles.leftCol}>
+            <div className={styles.top}>
+              <h1 className={styles.welcome}>Welcome,</h1>
+              <h1 className={styles.jimmy}>Jimmy</h1>
+              <p className={styles.para}>Seamless, agile, one-way stop to find all your job-seeking needs. <strong>JobaScript</strong> is the next generation's job search hack to guide designers and developers to get hired efficiently. Earn your badges, upgrade your skills - we have the courses you're looking for.</p>
+            </div>
+            <div className={styles.bottom}>
+              <p className={styles.smallHeader}>Job Finder</p>
+              <p className={styles.paraTwo}>Take your job match-making quiz, and let us do the rest.</p>
+              <button className={styles.quizButton}>Take the Quiz</button>
+            </div>
+          </div>
+          <div className={styles.rightCol}>
+            <h2>Find your job today</h2>
+            <div className={styles.topRight}>
+              <div className={styles.entryBox}>
+                <p className={styles.entry}>Entry-Level</p>
+                <p className={styles.jobs}>172.4k Jobs</p>
+              </div>
+              <div className={styles.remoteBox}>
+                <Image
+                  src={'/icons/boxIcon.svg'}
+                  alt={'guy at computer icon'}
+                  width={100}
+                  height={100}
+                />
+                <p className={styles.entry}>Remote Friendly</p>
+                <p className={styles.jobs}>388.2k Jobs</p>
+              </div>
+            </div>
+            <div className={styles.bottomRight}>
+              <p className={styles.entry}>Full-time Positions</p>
+              <p className={styles.jobs}>201.8k Jobs</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.carousel}>
+          <div className={styles.seperator}>
+            <div className={styles.smallLine}></div>
+            <h2>Recommended for You</h2>
+            <div className={styles.bigLine}></div>
+          </div>
+          <div className={styles.recommendations}>
+            <Image
+                src={'/icons/leftArrow.png'}
+                alt={'left Arrow'}
+                width={20}
+                height={30}
+                className={styles.arrow}
+            />
+          <div className={styles.parallelogramOne}>
+            <div className={styles.tags}>
+            <Image
+                 src={'/icons/bookmark.svg'}
+                 alt={'bookmark'}
+                 width={40}
+                 height={40}
+                 className={styles.bookmark}
+            />
+            <div className={styles.topRow}>
+              <div><p className={styles.tagOne}>Permanent</p></div>
+              <div><p className={styles.tagTwo}>Remote friendly</p></div>
+            </div>
+            <div className={styles.bottomRow}>
+              <div><p className={styles.tagThree}>Full-time</p></div>
+              <div><p className={styles.tagFour}>Senior position</p></div>
+            </div>
+            </div>
+            <p className={styles.tagFive}>Spotify | Senior UX UI Designer</p>
+          </div>
+          <div className={styles.parallelogramTwo}>
+            <div className={styles.tags}>
+            <Image
+                 src={'/icons/bookmark.svg'}
+                 alt={'bookmark'}
+                 width={40}
+                 height={40}
+                 className={styles.bookmark}
+            />
+            <div className={styles.topRow}>
+              <div><p className={styles.tagOne}>Contract</p></div>
+              <div><p className={styles.tagTwo}>Remote friendly</p></div>
+            </div>
+            <div className={styles.bottomRow}>
+              <div><p className={styles.tagThree}>Part-time</p></div>
+              <div><p className={styles.tagFour}>Junior position</p></div>
+            </div>
+            </div>
+            <p className={styles.tagFive}>Google | Junior Profuct Designer</p>
+          </div>
+          <div className={styles.parallelogramThree}>
+            <div className={styles.tags}>
+            <Image
+                 src={'/icons/bookmark.svg'}
+                 alt={'bookmark'}
+                 width={40}
+                 height={40}
+                 className={styles.bookmark}
+            />
+            <div className={styles.topRow}>
+              <div><p className={styles.tagOne}>Permanent</p></div>
+              <div><p className={styles.tagTwo}>Remote friendly</p></div>
+            </div>
+            <div className={styles.bottomRow}>
+              <div><p className={styles.tagThree}>Full-time</p></div>
+              <div><p className={styles.tagFour}>Senior position</p></div>
+            </div>
+            </div>
+            <p className={styles.tagFive}>Spotify | Senior UX UI Designer</p>
+          </div>
+          <Image
+                src={'/icons/rightArrow.png'}
+                alt={'right Arrow'}
+                width={20}
+                height={30}
+                className={styles.arrow}
+            />
+        </div>
+        </div>
+        <div className={styles.postings}>
+        <div className={styles.seperator}>
+            <div className={styles.smallLineTwo}></div>
+            <h2>Recent Job Postings</h2>
+            <div className={styles.bigLineTwo}></div>
+          </div> 
+          <div className={styles.allCards}>
+          <div className={styles.cardsOne}>
+            <div className={styles.topCard}>
+              <p className={styles.title}>Shopify</p>
+              <p className={styles.subtitle}>Senior UX UI Designer</p>
+            </div>
+            <div className={styles.bottomCard}>
+              <p className={styles.subtitle}>Skills Required</p>
+              <div className={styles.cardTopRow}>
+                <div className={styles.tagg}>Figma</div>
+                <div className={styles.taggTwo}>Adobe InDesign</div>
+              </div>
+                <div className={styles.taggThree}>Illustrator</div>
+            </div>
+          </div>
+          <div className={styles.cardsTwo}>
+            <div className={styles.topCardTwo}>
+              <p className={styles.title}>Apple</p>
+              <p className={styles.subtitle}>Senior Full-stack Developer</p>
+            </div>
+            <div className={styles.bottomCard}>
+              <p className={styles.subtitle}>Skills Required</p>
+              <div className={styles.cardTopRow}>
+                <div className={styles.tagg}>HTML</div>
+                <div className={styles.taggTwo}>Javascript</div>
+                <div className={styles.taggTwo}>CSS</div>
+              </div>
+              <div className={styles.cardTopRow}>
+                <div className={styles.taggTwo}>Python</div>
+                <div className={styles.taggTwo}>Ruby</div>
+                <div className={styles.taggTwo}>Java</div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.cardsTwo}>
+            <div className={styles.topCard}>
+              <p className={styles.title}>Unity</p>
+              <p className={styles.subtitle}>Software Developer</p>
+            </div>
+            <div className={styles.bottomCard}>
+              <p className={styles.subtitle}>Skills Required</p>
+              <div className={styles.cardTopRow}>
+                <div className={styles.tagg}>HTML</div>
+                <div className={styles.taggTwo}>Javascript</div>
+                <div className={styles.taggTwo}>CSS</div>
+              </div>
+              <div className={styles.cardTopRow}>
+                 <div className={styles.taggTwo}>Python</div>
+                <div className={styles.taggTwo}>Ruby</div>
+                <div className={styles.taggTwo}>Java</div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.cardsTwo}>
+            <div className={styles.topCard}>
+              <p className={styles.title}>Disney</p>
+              <p className={styles.subtitle}>Animator</p>
+            </div>
+            <div className={styles.bottomCard}>
+              <p className={styles.subtitle}>Skills Required</p>
+              <div className={styles.cardTopRow}>
+                <div className={styles.tagg}>Blender</div>
+                <div className={styles.taggTwo}>After Effects</div>
+              </div>
+              <div className={styles.cardTopRow}>
+                <div className={styles.taggTwo}>Photoshop</div>
+                <div className={styles.taggTwo}>Maya</div>
+              </div>
+            </div>
+          </div>
 
-        <Carousel/>
+
+
+          </div>
+        </div>
+
         <Footer/>
       </main>
     </>
