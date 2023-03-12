@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9449ce;
+      }
+
+      .cls-2 {
+        fill: #ffd655;
+        stroke: #ffd655;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #fff3d2;
+        stroke: #fff3d2;
+      }
+    </style>
+  </defs>
+  <g id="UX_UI_Fundamentals" data-name="UX/UI Fundamentals">
+    <g>
+      <g>
+        <path class="cls-1" d="m36,71.4C16.48,71.4.61,55.52.61,36S16.48.6,36,.6s35.39,15.88,35.39,35.4-15.88,35.4-35.39,35.4Z"/>
+        <path class="cls-1" d="m36,1.21c19.18,0,34.79,15.61,34.79,34.79s-15.61,34.79-34.79,34.79S1.21,55.18,1.21,36,16.82,1.21,36,1.21m0-1.21C16.12,0,0,16.12,0,36s16.12,36,36,36,36-16.12,36-36S55.88,0,36,0h0Z"/>
+      </g>
+      <rect class="cls-2" x="8.5" y="17.5" width="56" height="35" rx="12" ry="12"/>
+      <polygon class="cls-3" points="31.5 41.5 33.97 63.76 41.4 58.82 46.34 65 50.05 62.53 45.11 56.34 52.53 52.63 31.5 41.5"/>
+    </g>
+  </g>
+</svg>

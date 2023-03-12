@@ -1,27 +1,28 @@
-.main{
-background: pink;
-position: relative;
-}
-
-.body{
+.main {
+    position: relative;
+    padding: 0 6rem;
 
 }
 
-.imageL{
+
+.body {}
+
+.imageL {
     position: absolute;
     left: 1em;
     top: 4em;
 
 }
 
-.imageR{
+.imageR {
     position: absolute;
     right: 1em;
     top: 4em;
 
 }
 
-.positions{
+.positions {
     display: flex;
-    gap: 2em
+    gap: 2em;
+
 }

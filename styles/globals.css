@@ -1,13 +1,13 @@
 :root {
- --black: #0B0C20;
- --blue: #22527E;
- --light-blue: #A9C8DA;
- --gray: #EBF4F5;
- --orange: #EC8B58;
- --off-white: #EbF4F5;
+  --black: #0B0C20;
+  --blue: #22527E;
+  --light-blue: #A9C8DA;
+  --gray: #EBF4F5;
+  --orange: #EC8B58;
+  --off-white: #EbF4F5;
   --white: #fff;
- --semi-transparent: rgba(235, 244, 245, 0.5);
- }
+  --semi-transparent: rgba(235, 244, 245, 0.5);
+}
 
 * {
   box-sizing: border-box;
@@ -23,12 +23,9 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 a {

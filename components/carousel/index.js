@@ -37,25 +37,24 @@ export default function Carousel() {
                     backgroundImage: "url(/carousel-images/" + img + ".jpg)", //concatonation, it's inserting the useState image number, which matches with the image names.
                     backgroundSize: 'cover',
                     backgroundRepeat: "no-repeat",
-                    width: 1000,
+                    width: "auto",
                     height: 150
 
                 }}>
                     <div className={styles.positions}>
                         {data && data.map((info, index) => {
-                            if ("yes" == "yes") {
+                            {
                                 return (
-                                    <div>
-                                        <Card
-                                            key={index}
-                                            company={info.company}
-                                            title={info.title}
-                                            contract={info.contract}
-                                            remote={info.remote}
-                                            fulltime={info.fulltime}
-                                            position={info.position}
-                                        />
-                                    </div>
+
+                                    <Card
+                                        key={index}
+                                        company={info.company}
+                                        title={info.title}
+                                        contract={info.contract}
+                                        remote={info.remote}
+                                        fulltime={info.fulltime}
+                                        position={info.position}
+                                    />
 
                                 )
                             }

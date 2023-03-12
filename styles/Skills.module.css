@@ -1,26 +1,54 @@
+.main {
+    background: linear-gradient(to top left, #A9C8DA, #EBF4F5, #EBF4F5);
+    padding-bottom: 5em;
+}
+
 .hero {
     width: 100%;
-    height: 20em;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 6rem;
-    background-image: linear-gradient(to right, rgba(250, 179, 141, 1) , rgba(225, 114, 55, 1));
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem 0rem;
+    background-image: linear-gradient(to right, rgba(250, 179, 141, 1), rgba(225, 114, 55, 1));
+}
+
+
+.heroLCol {
+    width: 23%;
+    padding: 2em 0px;
 }
 
 .heroText {
-    width: 23%;
-    padding: 2em 0px;
-
+    margin-bottom: 2em;
 }
 
-.heroCTA {}
 
 .heroButton {
     background-color: var(--black);
     border: none;
     color: var(--white);
     height: 3em;
-    padding: 0px 2em;
+    padding: 0 2em;
     border-radius: 10px;
+}
+
+.topRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.skillsHeading {}
+
+.UXBadge {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-left: 4.5em;
+}
+
+.badge {
+    display: flex;
+    gap: 2em;
+    align-items: center;
 }
