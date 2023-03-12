@@ -23,6 +23,7 @@ export default function MobileMenu() {
                   <li className={styles.menuItem}><Link href="/" className={styles.text}>Home</Link></li>
                   <li className={styles.menuItem}><Link href="/skills" className={styles.text}>Skills</Link></li>
                   <li className={styles.menuItem}><Link href="/job" className={styles.text}>Search</Link></li>
+                  <li className={styles.menuItem}><Link href="/profile" className={styles.text}>Profile</Link></li>
                 </ul></div>
                 </> : <></>
               }   

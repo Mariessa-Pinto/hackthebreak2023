@@ -165,7 +165,7 @@
 
 .badges {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .badges__container {
