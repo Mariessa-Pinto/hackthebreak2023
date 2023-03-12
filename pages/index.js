@@ -105,7 +105,7 @@ export default function Home() {
               <div><p className={styles.tagFour}>Junior position</p></div>
             </div>
             </div>
-            <p className={styles.tagFive}>Google | Junior Profuct Designer</p>
+            <p className={styles.tagFive}>Google | Junior Product Designer</p>
           </div>
           <div className={styles.parallelogramThree}>
             <div className={styles.tags}>

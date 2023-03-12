@@ -15,9 +15,9 @@ export default function Navbar() {
             />
             <div className={styles.links}>
                 <ul className={styles.list}>
-                    <Link href={'/'}><li>Home</li></Link>
-                    <Link href={'/skills'}><li>Skills</li></Link>
-                    <Link href={'/job'}><li>Search </li></Link>
+                    <Link href={'/'}><li className={styles.hover}>Home</li></Link>
+                    <Link href={'/skills'}><li className={styles.hover}>Skills</li></Link>
+                    <Link href={'/job'}><li className={styles.hover}>Search </li></Link>
                 </ul>
             </div>
             <div className={styles.buttonAndProfile}>

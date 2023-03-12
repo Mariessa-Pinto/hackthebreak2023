@@ -292,6 +292,17 @@
   padding: 2rem;
   margin-bottom: 6rem;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+.cardsOne:hover {
+  scale: 1.03;
+  transition: 200ms;
+}
+
+.cardsTwo:hover {
+  scale: 1.03;
+  transition: 200ms;
 }
 
 .cardsTwo {
@@ -301,6 +312,7 @@
   padding: 2rem;
   margin-bottom: 6rem;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .title {

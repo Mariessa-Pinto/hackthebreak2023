@@ -33,6 +33,11 @@
     display: none;
 }
 
+.hover:hover {
+    border-bottom: 3px solid #8E9FAF;
+    transition: 200ms;
+}
+
 /* Mobile */
 @media only screen and (max-width: 430px) {
     .buttonAndProfile {
