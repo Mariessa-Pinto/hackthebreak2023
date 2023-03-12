@@ -1,0 +1,23 @@
+.main {
+    width: 18em;
+    height: 10em;
+    transform: skew(-20deg);
+    background: var(--white);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+
+}
+
+.area{
+    position: absolute;
+}
+
+.img{
+    border-radius: 20px;
+}
