@@ -19,25 +19,25 @@ export const position = {
     ],
     progress: [
         {
-            image: "[insert image url in data file]",
+            image: "/imgs/4.png",
             area: "C++ Fundamentals"
         },
         {
-            image: "[insert image url in data file]",
+            image: "/imgs/4.png",
             area: "Javascript Fundamentals"
         }
     ],
     recommended: [
         {
-            image: "[insert image url in data file]",
+            image: "/imgs/3.png",
             title: "Premier Pro for Seasoned Pros"
         },
         {
-            image: "[insert image url in data file]",
+            image: "/imgs/2.png",
             title: "3D Modelling Basics"
         },
         {
-            image: "[insert image url in data file]",
+            image: "/imgs/1.png",
             title: "Digital Design Concepts"
         }
     ]

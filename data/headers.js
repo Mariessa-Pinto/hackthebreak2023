@@ -3,7 +3,8 @@ export const headers = {
         {
             recommended: "Recommended for You",
             recent: "Recent Job Postings",
-            progress: "In Progress"
+            progress: "In Progress",
+            badge: "Recently Earned Badges"
 
         }
     ]

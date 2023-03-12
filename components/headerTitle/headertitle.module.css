@@ -1,8 +1,10 @@
 .main {
 display: flex;
 align-items: center;
-width: 100%;
+width: auto;
 box-sizing: border-box;
+margin: 4em 0em 1em 0em;
+
 
 }
 
