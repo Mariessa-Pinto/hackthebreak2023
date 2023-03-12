@@ -6,6 +6,7 @@ import HeaderTitle from '@/components/headerTitle'
 import { headers } from '../data/headers.js'
 import { useState } from 'react'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer/index.js'
 
 export default function Home() {
 
@@ -23,7 +24,8 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar/>
 
-        <Carousel />
+        <Carousel/>
+        <Footer/>
       </main>
     </>
   )
